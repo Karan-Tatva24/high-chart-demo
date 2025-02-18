@@ -1,21 +1,11 @@
-import { useState } from "react";
-import "./App.css";
-import BarChart from "./components/BarChart";
+import MyChart from "./components/MyChart";
 
-function App() {
-  const [count, setCount] = useState(0);
-
+const App = () => {
   return (
     <>
-      <BarChart />
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
+      <MyChart />
     </>
   );
-}
+};
 
 export default App;
